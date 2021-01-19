@@ -54,7 +54,7 @@ def idct2(blocks):
 
 if __name__ == "__main__":
     # Implementation Checks
-    im1 = imageio.imread('../img/test1.png')
+    im1 = imageio.imread('img/test1.png')
 
     # Assert block and unblock operations reverse one another
     np.testing.assert_array_equal(blocks_to_img(img_to_blocks(block_size, im1)), im1)
